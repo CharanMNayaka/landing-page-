@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandana IT Solutions | Empowering Your Business</title>
+    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon (Optional) -->
+    <link src= "images/unnamed.png" rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid"> <!-- Changed to container-fluid for full-width -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/unnamed.png" alt="Logo" class="logo">
+                <span class="ms-2" style="color: #ec8301;">Chandana IT Solutions</span> <!-- Title, hidden on mobile -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">  <!-- Use ms-auto to push nav to the right in desktop view -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#journey">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#values">Core Values</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="btn btn-outline-light">Register</a>
+                        <a href="#signup" class="btn btn-outline-light">Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script> <!-- Include your external JS file -->
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center justify-content-center h-100">
+            <div class="col-md-8 hero-text text-center">
+                <h1 class="display-4" style="color:  #e68a00;">Empowering Your Growth & career with Chandana IT Solutions</h1>   
+                <p class="lead">Reliable and efficient IT services to help your business thrive in the digital era.</p>
+                <a href="#services" class="btn btn-outline-secondary">Read More</a>
+                <a href="#contact" class="btn btn-outline-secondary">Contact Us</a> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Services -->
+<section id="services" class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 text-center service-card">
+                    <div class="icon-container">
+                        <img src="images/exam.svg" class="card-icon" alt="Online and Offline Examination">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Online and Offline Exam Booking</h5>
+                        <p class="card-text">Offering comprehensive exam booking services tailored to your needs.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 text-center service-card">
+                    <div class="icon-container">
+                        <img src="images/human.png" class="card-icon" alt="Networking">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Man power Sourcing</h5>
+                        <p class="card-text">Expert manpower sourcing solutions to connect you with top talent, ensuring your team's success and growth.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 text-center service-card">
+                    <div class="icon-container">
+                        <img src="images/skill-development.svg" class="card-icon" alt="Skill Development">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Skill Development</h5>
+                        <p class="card-text">Enhancing your team's skills with tailored training programs.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 text-center service-card">
+                    <div class="icon-container">
+                        <img src="images/web-development.svg" class="card-icon" alt="Web Development">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Crafting custom websites that cater to your business needs.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 text-center service-card">
+                    <div class="icon-container">
+                        <img src="images/app-development.png" class="card-icon" alt="App Development">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">App Development</h5>
+                        <p class="card-text">Developing user-friendly applications for various platforms.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 text-center service-card">
+                    <div class="icon-container">
+                        <img src="images/computer.png" class="card-icon" alt="Cloud Solutions">
+                    </div>
+                    <div class="card-body">
+                        
+                        <h5 class="card-title">IT Infrastructure & Networking</h5>
+                        <p class="card-text">Comprehensive IT infrastructure solutions tailored to enhance your business performance while harnessing the cloud for accelerated growth.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Us -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <!-- Text Section -->
+            <div class="col-md-6 order-2 order-md-1">
+                <h2>About Us</h2>
+                <p>At Chandana IT Solutions, we have evolved from a small startup into a leading provider of comprehensive IT services. Our journey is defined by innovation, growth, and an unwavering commitment to excellence. We continuously strive to deliver top-notch services that meet the evolving needs of our clients.</p>
+                <p>Our dedicated team of professionals is committed to driving results and creating value for our clients through reliable and efficient IT solutions.</p>
+                <div class="text-center mt-4">
+                    <a href="#learn-more" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <!-- Image Section -->
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="images/about-us.jpg" alt="About Us" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Core Values -->
+<section id="values" class="core-values-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Core Values</h2>
+        <div class="row align-items-center">
+            <!-- Value 1 -->
+            <div class="col-md-3 text-center core-value">
+                <img src="images/integrity.svg" alt="Integrity" class="core-value-icon">
+                <h5>Integrity</h5>
+                <p>Upholding honesty and strong moral principles in all our actions.</p>
+            </div>
+            <!-- Value 2 -->
+            <div class="col-md-3 text-center core-value">
+                <img src="images/excellence.svg" alt="Innovation" class="core-value-icon">
+                <h5>Excellence</h5>
+                <p>Striving for the highest standards in our services and operations.</p>
+            </div>
+            <!-- Value 3 -->
+            <div class="col-md-3 text-center core-value">
+                <img src="images/client-focus.svg" alt="Client Focus" class="core-value-icon">
+                <h5>Client Focus</h5>
+                <p>Prioritizing our clients' needs and exceeding their expectations.</p>
+            </div>
+            <!-- Value 4 -->
+            <div class="col-md-3 text-center core-value">
+                <img src="images/innovation.svg" alt="Excellence" class="core-value-icon">
+                <h5>Innovation</h5>
+                <p>Continuously seeking creative solutions to drive success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Expertise -->
+<section class="expertise-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Expertise</h2>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+            <div class="expertise-circle position-relative">
+                <span>Online and Offline Exams</span>
+            </div>
+            <div class="expertise-circle position-relative">
+                <span>Man power Sourcing</span>
+            </div>
+            <div class="expertise-circle position-relative">
+                <span>Web and App Development</span>
+            </div>
+            <div class="expertise-circle position-relative">
+                <span>Skill Development</span>
+            </div>
+            <div class="expertise-circle position-relative">
+                <span>IT Consultancy</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Exam Centre Books -->
+<section class="exam-centre-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="images/books-centre.avif" alt="Exam Centre Books" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2>Exam Centre Books</h2>
+                <p style="text-align: justify;">Access our curated list of books and materials to prepare for IT certifications and enhance your skills. Our collection includes essential readings that cater to various topics within the IT field, helping you to stay ahead in your career.</p>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-primary">View More Books</a> <!-- View More Button -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Form -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center mb-4">We'd love to hear from you! Please fill out the form below to get in touch.</p>
+        <form>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+                <div class="col-md-5">
+                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-10">
+                    <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-10 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Our Clients -->
+<section class="clients-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Clients</h2>
+        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center g-2">
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 1" class="img-fluid client-logo">
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 2" class="img-fluid client-logo">
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 3" class="img-fluid client-logo">
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 4" class="img-fluid client-logo">
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center g-2">
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 5" class="img-fluid client-logo">
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 6" class="img-fluid client-logo">
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 7" class="img-fluid client-logo">
+                        </div>
+                        <div class="col-6 col-md-3 d-flex justify-content-center">
+                            <img src="images/clients.webp" alt="Client 8" class="img-fluid client-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <!-- About Us Section -->
+        <div class="footer-about mb-3 mb-md-0" style="flex-basis: 30%;">
+            <h5>About Us</h5>
+            <p>Providing top-tier IT solutions to empower businesses globally. Our team of experts delivers innovative and reliable solutions tailored to your business needs.</p>
+        </div>
+        <!-- Our Services Section -->
+        <div class="footer-services mb-3 mb-md-0">
+            <h5>Our Services</h5>
+            <ul class="list-unstyled">
+                <li><a href="#services" class="text-white text-decoration-none">Online and Offline Booking</a></li>
+                <li><a href="#services" class="text-white text-decoration-none">Networking</a></li>
+                <li><a href="#services" class="text-white text-decoration-none">Skill Development</a></li>
+                <li><a href="#services" class="text-white text-decoration-none">Web Development</a></li>
+                <li><a href="#services" class="text-white text-decoration-none">App Development</a></li>
+            </ul>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="footer-quick-links">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+                <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#clients" class="text-white text-decoration-none">Our Clients</a></li>
+                <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        &copy;<i> 2024 Chandana IT Solutions. All rights reserved.</i> <span>Developed by DART 1</span>
+    </div>
+</footer>
+</body>
+</html>

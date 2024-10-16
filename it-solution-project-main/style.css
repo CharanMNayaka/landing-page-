@@ -1,0 +1,464 @@
+/*------------------------------------------------------------------------------*/
+/* Global Styles */
+/*------------------------------------------------------------------------------*/
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+/*------------------------------------------------------------------------------*/
+/* Header Styles */
+/*------------------------------------------------------------------------------*/
+.header {
+  background-color: #f0c14b; 
+  padding: 10px 0;
+}
+.header .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center; 
+}
+/* Logo Styles */
+.header .navbar-brand .logo {
+  width: 50px;
+  height: 50px;
+  padding-right: 1px;
+
+}
+/* Navbar Link Styles */
+.header .navbar-nav .nav-link {
+  color: #333;
+  padding: 10px;
+  font-weight: 500;
+}
+/* Hover Effect for Nav Links */
+.header .navbar-nav .nav-link:hover {
+  color: #ff9900; 
+}
+/* For Login/Signup Buttons */
+.header .navbar-nav .btn {
+  margin-left: 10px;
+  background-color: #ff9900;
+  color: white;
+  font-weight: 600;
+}
+/* Hover Effect for Buttons */
+.header .navbar-nav .btn:hover {
+  background-color: #e68a00; 
+}
+/* Mobile Hamburger Menu */
+.navbar-toggler {
+  border-color: #ff9900;
+  margin-right: 30px auto;
+  margin-top: 5px;
+}
+/* Center the toggler icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2883, 83, 83, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Responsive Styles for Mobile */
+@media (max-width: 767.98px) {
+  .header .navbar-brand {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+  }
+  .header .navbar-brand span {
+    display: none; 
+  }
+  .navbar-toggler {
+    margin-top: 10px;
+    margin-left: 85px;
+    display: block;
+  }
+  .header .navbar-nav {
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .header .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .header .navbar-nav .btn {
+    display: inline-block;
+    margin: 10px auto;
+  }
+  .header .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
+}
+/* For desktop view (greater than 768px) */
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Move nav items to the right */
+    align-items: center;
+  } 
+  .navbar-nav {
+    margin-left: auto; /* Push nav items and buttons to the right */
+    text-align: right; /* Align text in nav items to the right */
+  }
+  .navbar-nav .btn {
+    margin-left: 10px; /* Add spacing between buttons */
+  }
+}
+/*------------------------------------------------------------------------------*/
+/* Hero Section Styles */
+/*------------------------------------------------------------------------------*/
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 70vh; /* 60% of the viewport height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+  z-index: 1; /* Ensure this layer is below the text */
+}
+.hero-text {
+  position: relative; /* Make sure text is on top of the background */
+  color: #333; /* Text color */
+  z-index: 2; /* Ensure text is above the background */
+}
+.hero-text h1 {
+  font-weight: 700; /* Bold font weight for the heading */
+}
+.hero-text p {
+  margin: 20px 0;
+}
+.btn-primary, .btn-outline-secondary {
+  position: relative;
+  background-color: #ff9900; 
+  color: white;
+  border: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: background-color 0.4s ease;
+}
+.btn-primary::before, .btn-outline-secondary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(230, 138, 0, 0.5); /* Light gold splash */
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out, top 0.4s ease-in-out, left 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.btn-primary:hover::before, .btn-outline-secondary:hover::before {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+}
+.btn-primary:hover, .btn-outline-secondary:hover {
+  background-color: #e68a00; 
+  color: white;
+}
+/*******************************************************************************/
+/* Services Section */
+/******************************************************************************/
+.services-section {
+  background-color: white;
+  padding: 60px 0;
+}
+.services-section h2 {
+  font-weight: 600;
+  color:  #e68a00;
+  margin-bottom: 40px;
+}
+.service-card {
+  background-color:  #fff3e0;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  padding: 20px;
+}
+.service-card:hover {
+  transform: scale(1.05);
+}
+.service-card .icon-container {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.service-card .card-icon {
+  width: 100%;
+  height: 100%;
+}
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.service-card p {
+  color: #555;
+}
+.service-card .btn-primary {
+  margin-top: 20px;
+}
+/* Additional Styles for Hover Effects */
+.btn-primary {
+  background: linear-gradient(to right, #ff9900, #e68a00); /* Gradient gold */
+}
+.btn-primary:hover {
+  background: linear-gradient(to right, #ffcc66, #ff9900); /* Lighter gradient on hover */
+}
+/*------------------------------------------------------------------------------*/
+/* About Us Section */
+/*------------------------------------------------------------------------------*/
+.about-section {
+  padding: 30px 0;
+  background-color: white;
+}
+.about-section h2 {
+  font-weight: 600;
+  color: #e68a00;
+  margin-bottom: 20px;
+}
+.about-section p {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.about-section .btn-primary {
+  background-color: #f0c14b;
+  border: none;
+  font-weight: 600;
+}
+.about-section .btn-primary:hover {
+  background-color: #e68a00;
+}
+.about-section img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767.98px) {
+  .about-section .order-1 {
+      order: 2 !important; /* Ensure text comes first on mobile */
+  }
+  .about-section .order-2 {
+      order: 1 !important; /* Ensure image comes second on mobile */
+  }
+}
+/*------------------------------------------------------------------------------*/
+/* Core Values Section */
+/*------------------------------------------------------------------------------*/
+.core-values-section {
+  background-color: white;
+}
+.core-values-section h2 {
+  font-weight: 600;
+  color: #e68a00;
+  margin-bottom: 10px;  
+}
+.core-value {
+  margin-bottom: 30px; /* Space between each value */
+}
+.core-value-icon {
+  width: 80px; 
+  height: 80px; 
+  margin-bottom: 10px; 
+  transition: transform 0.3s ease; 
+}
+.core-value:hover .core-value-icon {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+.core-value h5 {
+  font-weight: 600; /* Bold title */
+  margin-bottom: 5px; /* Space between title and description */
+}
+.core-value p {
+  color: #555; /* Description text color */
+}
+/*------------------------------------------------------------------------------*/
+/* Expertise Section Styles */
+/*------------------------------------------------------------------------------*/
+.expertise-section {
+  background-color: white;
+  padding: 60px 0; /* Vertical padding for the section */
+}
+.expertise-section h2 {
+  font-weight: 600; /* Bold font weight for the heading */
+  color: #e68a00;/* Dark text color */
+  margin-bottom: 40px; /* Space below heading */
+}
+/* Expertise Circle Styles */
+.expertise-circle {
+  background-color: #f0c14b; /* Gold background for circles */
+  color: white; 
+  padding: 20px; /* Padding for the circles */
+  border-radius: 50%; /* Make it a circle */
+  width: 150px; /* Width of the circle */
+  height: 150px; /* Height of the circle */
+  display: flex; /* Flexbox for centering text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center; /* Center text alignment */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.expertise-circle:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+/* Exam Centre Section Styles */
+.exam-centre-section {
+  background-color: white;
+  padding: 60px 0; /* Vertical padding for the section */
+}
+.exam-centre-section h2 {
+  font-weight: 600; /* Bold font weight for the heading */
+  color: #e68a00; 
+  margin-bottom: 40px; /* Space below heading */
+}
+/* About Text Styles */
+.exam-centre-section p {
+  color: #555; 
+  margin-bottom: 20px; /* Space below paragraphs */
+  text-align: justify; /* Justify the text */
+}
+/* Centered View More Button */
+.text-center {
+  text-align: center; /* Center align the button */
+  margin-bottom: 30px;
+}
+.btn-primary {
+  background-color: #ff9900; /* Gold background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+.btn-primary:hover {
+  background-color: #e68a00; /* Color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover for effect */
+}
+/* Responsive Image */
+.img-fluid {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Mobile Specific Styles */
+@media (max-width: 767.98px) {
+  .row.align-items-center {
+    flex-direction: column; /* Stack elements vertically in mobile view */
+  }
+  .col-md-6:first-child {
+    order: 2; /* Make the text section come first in mobile view */
+  }
+  .col-md-6:last-child {
+    order: 1; /* Image comes below text in mobile view */
+    margin-top: 20px; /* Add space above the image */
+  }
+}
+/*------------------------------------------------------------------------------*/
+/* Contact Section Styles */
+/*------------------------------------------------------------------------------*/
+.contact-section {
+  background-color: white;
+  padding: 60px 0; /* Vertical padding for the section */
+}
+.contact-section h2 {
+  font-weight: 600; /* Bold font weight for the heading */
+  color:#e68a00; 
+  margin-bottom: 20px; /* Space below heading */
+}
+.contact-section p {
+  color: #555; /* Slightly lighter color for paragraph text */
+  margin-bottom: 40px; /* Space below paragraph */
+}
+/* Form Control Styles */
+.form-control {
+  border-radius: 10px; /* Rounded corners for input fields */
+  border: 2px solid #ff9900; /* Gold border */
+  transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+.form-control:focus {
+  border-color: #e68a00; /* Darker gold on focus */
+  box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); /* Soft shadow on focus */
+}
+/* Button Styles */
+.btn-primary {
+  background-color: #ff9900; /* Gold background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+.btn-primary:hover {
+  background-color: #e68a00; /* Darker gold on hover */
+  transform: scale(1.05); /* Slightly scale up on hover for effect */
+}
+/*------------------------------------------------------------------------------*/
+/* Clients Section Styles */
+/*------------------------------------------------------------------------------*/
+.clients-section {
+  background-color: white;
+  padding: 60px 0; /* Vertical padding for the section */
+}
+.clients-section h2 {
+  font-weight: 600; /* Bold font weight for the heading */
+  color: #e68a00; 
+  margin-bottom: 40px; /* Space below heading */
+}
+/* Client Logo Styles */
+.client-logo {
+  width: 100px; /* Width of the client logo */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the logo circular */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.client-logo:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+/* Mobile Specific Styles */
+@media (max-width: 767.98px) {
+  .carousel-item .col-md-3 {
+    flex: 0 0 50%; /* Set width to 50% for 2 clients per row */
+    max-width: 50%; /* Ensure the client columns take 50% width */
+  }
+}
+/* Footer Styles */
+.footer {
+  background-color: #343a40; 
+  color: #fff; 
+}
+.footer h5 {
+  font-weight: 600; /* Bold headings */
+  color: #e68a00; 
+  margin-bottom: 20px;
+}
+.footer p, .footer a {
+  color: #fff; /* White text for links and paragraphs */
+}
+.footer p {
+  text-align: justify; /* Justify the about us paragraph */
+}
+.footer a:hover {
+  color: #e68a00; 
+}
+.footer ul {
+  padding-left: 0;
+}
